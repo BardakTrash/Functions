@@ -4,8 +4,6 @@
 #include"Sort.h"
 #include"Statistics.h"
 #include"Shifts.h"
-#include"constants.h"
-
 int main()
 {
 	setlocale(LC_ALL, "");
