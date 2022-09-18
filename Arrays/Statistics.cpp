@@ -19,16 +19,6 @@ double Sum(double arr[], const int n)
 	return sum;
 
 }
-
-/*int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	int sum = 0;
-	for (int i = 0; i < ROWS; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}*/
 double Avg(int arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;

@@ -28,18 +28,3 @@ void Sort(double arr[], const int n)
 		}
 	}
 }
-//void Sort(int arr[ROWS][COLS], const int rols, const int cols)
-//	{
-//	for (int i = 0; i < ROWS; i++)
-//		{
-//		for (int j = i + 1; j < COLS; j++)
-//		{
-//			if (arr[j] < arr[i])
-//			{
-//				int buffer = arr[i];
-//				arr[i] = arr[j];
-//				arr[j] = buffer;
-//			}
-//		}
-//	}
-//}
