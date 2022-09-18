@@ -1,4 +1,5 @@
 #pragma once
+#include"constants.h"
 
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(float arr[], const int n, int minRand = 0, int maxRand = 100);
