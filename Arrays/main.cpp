@@ -4,6 +4,7 @@
 #include"Sort.h"
 #include"Statistics.h"
 #include"Shifts.h"
+#include"constants.h"
 
 int main()
 {
@@ -51,8 +52,4 @@ int main()
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
-	//minValueIn(i_arr_2, ROWS, COLS);
-	//maxValueIn(i_arr_2, ROWS, COLS);
-	//Sum(i_arr_2, ROWS, COLS);
-	//Sort(i_arr_2, ROWS, COLS);
 }

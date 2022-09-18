@@ -19,11 +19,11 @@ void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, 
 		}
 	}
 }
-void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
+void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
 {
 	if (maxRand < minRand)
 	{
-		double buffer = minRand;
+		float buffer = minRand;
 		minRand = maxRand;
 		maxRand = buffer;
 	}
@@ -37,11 +37,11 @@ void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS, int minRan
 		}
 	}
 }
-void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
+void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
 {
 	if (maxRand < minRand)
 	{
-		float buffer = minRand;
+		double buffer = minRand;
 		minRand = maxRand;
 		maxRand = buffer;
 	}
@@ -89,11 +89,11 @@ void FillRand(int arr[], const int n, int minRand, int maxRand)
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
 }
-void FillRand(double arr[], const int n, int minRand, int maxRand)
+void FillRand(float arr[], const int n, int minRand, int maxRand)
 {
 	if (maxRand <= minRand)
 	{
-		int buffer = minRand;
+		float buffer = minRand;
 		minRand = maxRand;
 		maxRand = buffer;
 	}
@@ -104,11 +104,11 @@ void FillRand(double arr[], const int n, int minRand, int maxRand)
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
 }
-void FillRand(float arr[], const int n, int minRand, int maxRand)
+void FillRand(double arr[], const int n, int minRand, int maxRand)
 {
 	if (maxRand <= minRand)
 	{
-		float buffer = minRand;
+		int buffer = minRand;
 		minRand = maxRand;
 		maxRand = buffer;
 	}
