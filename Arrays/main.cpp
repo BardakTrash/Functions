@@ -29,8 +29,9 @@ void Sort(int arr[ROWS][COLS], const int ROLS, const int COLS);
 
 int Sum(int arr[], const int n);
 double Sum(double arr[], const int n);
+float Sum(float arr[], const int n);
+char Sum(char arr[], const int n);
 
-int Sum(int arr[ROWS][COLS], const int ROLS, const int COLS);
 
 double Avg(int arr[], const int n);
 double Avg(double arr[], const int n);
@@ -276,6 +277,26 @@ int Sum(int arr[], const int n)
 double Sum(double arr[], const int n)
 {
 	double sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
+
+}
+float Sum(float arr[], const int n)
+{
+	float sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
+
+}
+char Sum(char arr[], const int n)
+{
+	char sum = 0;
 	for (int i = 0; i < n; i++)
 	{
 		sum += arr[i];
