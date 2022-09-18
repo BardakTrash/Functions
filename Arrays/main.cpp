@@ -1,10 +1,4 @@
 #include<iostream>
-using namespace std;
-
-#define tab "\t"
-
-const int ROWS = 5;
-const int COLS = 4;
 
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(float arr[], const int n, int minRand = 0, int maxRand = 100);
