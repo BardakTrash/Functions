@@ -6,12 +6,6 @@
 #include"Shifts.h"
 
 template<typename T>
-void Print(T arr[], const int n);
-
-template<typename T>
-void Print(T arr[ROWS][COLS], const int ROLS,const int COLS);
-
-template<typename T>
 void Sort(T arr[], const int n);
 
 template<typename T>
@@ -84,133 +78,7 @@ int main()
 	//Sum(i_arr_2, ROWS, COLS);
 	//Sort(i_arr_2, ROWS, COLS);
 }
-void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
-{
-	if (maxRand < minRand)
-	{
-		int buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
 
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % (maxRand - minRand) + minRand;
-		}
-	}
-}
-void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
-{
-	if (maxRand < minRand)
-	{
-		double buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % (maxRand - minRand) + minRand;
-		}
-	}
-}
-void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
-{
-	if (maxRand < minRand)
-	{
-		float buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % (maxRand - minRand) + minRand;
-		}
-	}
-}
-void FillRand(char arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
-{
-	if (maxRand < minRand)
-	{
-		char buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % (maxRand - minRand) + minRand;
-		}
-	}
-}
-void FillRand(int arr[], const int n, int minRand, int maxRand)
-{
-	if (maxRand <= minRand)
-	{
-		int buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-	
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (maxRand - minRand) + minRand;
-	}
-}
-void FillRand(double arr[], const int n, int minRand, int maxRand)
-{
-	if (maxRand <= minRand)
-	{
-		double buffer = minRand;
-		minRand = maxRand;
-		maxRand = buffer;
-	}
-	if (minRand == maxRand)maxRand++;
-
-	minRand *= 100;
-	maxRand *= 100;
-	
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (maxRand - minRand) + minRand;
-		arr[i] /= 100;
-	}
-}
-template<typename T>
-void Print(T arr[ROWS][COLS], const int ROLS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-}
-template<typename T>
-void Print(T arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << tab;
-	}
-	cout << endl;
-}
 template<typename T>
 void Sort(T arr[], const int n)
 {
