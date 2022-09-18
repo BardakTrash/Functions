@@ -1,14 +1,9 @@
-#include<iostream>
-
-void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
-void FillRand(float arr[], const int n, int minRand = 0, int maxRand = 100);
-void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
-void FillRand(char arr[], const int n, int minRand = 0, int maxRand = 100);
-
-void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
-void FillRand(float arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
-void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
-void FillRand(char arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
+#include"stdafx.h"
+#include"FillRand.h"
+#include"Print.h"
+#include"Sort.h"
+#include"Statistics.h"
+#include"Shifts.h"
 
 template<typename T>
 void Print(T arr[], const int n);
