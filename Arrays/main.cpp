@@ -4,7 +4,8 @@
 #include"Sort.h"
 #include"Statistics.h"
 #include"Shifts.h"
-int main()
+template<typename T>
+void main(T)
 {
 	setlocale(LC_ALL, "");
 	const int n = 5;
